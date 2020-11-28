@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8Ball_Fortune_Teller</title>
+    <link rel="stylesheet" href="eightBall.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Piedra&display=swap" rel="stylesheet">
+
+</head>
+<body onload="greet()">
+    <div class="bgimg">  
+        <h1 id="wish"></h1>
+        <img src="8ball.png" id="img" alt="Image Missing Will be Uploaded Soon!!!">
+        <div class="form">
+            <form>
+                <input type="text" id="question" placeholder="Enter Your Question's : "><br>
+                <button type="button" onclick="setTimeout(predict, 3000);">Predict</button>
+                <button type="button" onclick="clearValue()">Reset</button>
+                <button type="button" onclick="location.href='index.html'">Quit</button>
+                
+                <h1 id="fortune"></h1>
+            </form>
+        </div>
+    </div>
+        <script src="eightBall.js"></script>
+</body>
+</html>
